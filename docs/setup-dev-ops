@@ -1,0 +1,11 @@
+
+#Executed by root
+#dev user perms
+adduser dev
+usermod -aG admin dev
+
+#Executed by sudo dev
+sudo apt-get install apache2
+sudo apt-get install mysql-server
+sudo apt-get install php7.0 libapache2-mod-php7.0
+sudo /etc/init.d/apache2 restart
